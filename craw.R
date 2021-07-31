@@ -116,7 +116,7 @@ result <- output_data %>%
 ## write data to rds and csv
 fs::dir_create("data")
 write_csv(result, "data/output.csv")
-write_rds(result, "data/output.rds")
+write_rds(result, "data/output.rds", compress = 'gz')
 
  
 
